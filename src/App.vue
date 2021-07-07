@@ -1,28 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <x-button>默认按钮</x-button>
+    <x-button type="primary">主要按钮</x-button>
+    <x-button type="warning">警告按钮</x-button>
+    <x-button type="danger">危险按钮</x-button>
+    <x-button type="success">成功按钮</x-button>
+    <x-button type="info">信息按钮</x-button>
+
+    <x-icon icon="loader-line"></x-icon>
+    <x-button icon="loader-line" type="info">信息按钮</x-button>
+    <x-button icon="loader-line" type="info"></x-button>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
